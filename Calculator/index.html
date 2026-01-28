@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Professional Calculator</h1>
+    </header>
+
+    <!-- Calculator Container -->
+    <div class="calculator-container">
+        <!-- Display Screen -->
+        <div class="display-container">
+            <div class="previous-operation" id="previousOperation"></div>
+            <div class="display active" id="display">0</div>
+        </div>
+
+        <!-- Buttons Grid -->
+        <div class="buttons-grid">
+            <!-- Row 1: Clear, Delete, Division -->
+            <button class="btn btn-clear" data-action="clear">C</button>
+            <button class="btn btn-delete" data-action="delete">DEL</button>
+            <button class="btn btn-operator" data-operator="/">÷</button>
+            <button class="btn btn-operator" data-operator="*">×</button>
+
+            <!-- Row 2: 7, 8, 9, Subtraction -->
+            <button class="btn btn-number" data-number="7">7</button>
+            <button class="btn btn-number" data-number="8">8</button>
+            <button class="btn btn-number" data-number="9">9</button>
+            <button class="btn btn-operator" data-operator="-">−</button>
+
+            <!-- Row 3: 4, 5, 6, Addition -->
+            <button class="btn btn-number" data-number="4">4</button>
+            <button class="btn btn-number" data-number="5">5</button>
+            <button class="btn btn-number" data-number="6">6</button>
+            <button class="btn btn-operator" data-operator="+">+</button>
+
+            <!-- Row 4: 1, 2, 3, Equals -->
+            <button class="btn btn-number" data-number="1">1</button>
+            <button class="btn btn-number" data-number="2">2</button>
+            <button class="btn btn-number" data-number="3">3</button>
+            <button class="btn btn-equals" data-action="equals" style="grid-row: span 2;">=</button>
+
+            <!-- Row 5: 0, Decimal -->
+            <button class="btn btn-number btn-zero" data-number="0">0</button>
+            <button class="btn btn-number" data-number=".">.</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
