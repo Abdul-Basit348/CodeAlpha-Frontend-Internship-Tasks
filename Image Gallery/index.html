@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Portfolio Gallery</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="gallery-header">
+        <h1>Visual Perspectives</h1>        
+        <!-- Filter Buttons -->
+        <div class="filter-controls">
+            <button class="btn active" data-filter="all">All</button>
+            <button class="btn" data-filter="nature">Nature</button>
+            <button class="btn" data-filter="architecture">Architecture</button>
+            <button class="btn" data-filter="tech">Technology</button>
+        </div>
+    </header>
+
+    <main class="gallery-container">
+        <!-- 1. Nature: River/Canyon -->
+        <div class="gallery-item" data-category="nature">
+            <div class="image-wrapper">
+                <img src="https://picsum.photos/id/1015/600/400" alt="River Valley">
+                <div class="overlay"><span>View Image</span></div>
+            </div>
+        </div>
+
+        <!-- 2. Architecture: City Building -->
+        <div class="gallery-item" data-category="architecture">
+            <div class="image-wrapper">
+                <img src="https://picsum.photos/id/1040/600/400" alt="White Castle">
+                <div class="overlay"><span>View Image</span></div>
+            </div>
+        </div>
+
+        <!-- 3. Tech: Laptop Work -->
+        <div class="gallery-item" data-category="tech">
+            <div class="image-wrapper">
+                <img src="https://picsum.photos/id/0/600/400" alt="Laptop Workspace">
+                <div class="overlay"><span>View Image</span></div>
+            </div>
+        </div>
+
+        <!-- 4. Nature: Forest -->
+        <div class="gallery-item" data-category="nature">
+            <div class="image-wrapper">
+                <img src="https://picsum.photos/id/10/600/400" alt="Forest Trees">
+                <div class="overlay"><span>View Image</span></div>
+            </div>
+        </div>
+
+        <!-- 5. Architecture: Bridge -->
+        <div class="gallery-item" data-category="architecture">
+            <div class="image-wrapper">
+                <img src="https://picsum.photos/id/122/600/400" alt="City Bridge">
+                <div class="overlay"><span>View Image</span></div>
+            </div>
+        </div>
+
+        <!-- 6. Tech: Coding/Typing -->
+        <div class="gallery-item" data-category="tech">
+            <div class="image-wrapper">
+                <img src="https://picsum.photos/id/1/600/400" alt="Coding Setup">
+                <div class="overlay"><span>View Image</span></div>
+            </div>
+        </div>
+
+        <!-- 7. Nature: Mountains -->
+        <div class="gallery-item" data-category="nature">
+            <div class="image-wrapper">
+                <img src="https://picsum.photos/id/1016/600/400" alt="Mountains">
+                <div class="overlay"><span>View Image</span></div>
+            </div>
+        </div>
+
+        <!-- 8. Architecture: Modern Interior -->
+        <div class="gallery-item" data-category="architecture">
+            <div class="image-wrapper">
+                <img src="https://picsum.photos/id/238/600/400" alt="Urban Cityscape">
+                <div class="overlay"><span>View Image</span></div>
+            </div>
+        </div>
+
+        <!-- 9. Tech: Computer Hardware -->
+        <div class="gallery-item" data-category="tech">
+            <div class="image-wrapper">
+                <img src="https://picsum.photos/id/180/600/400" alt="Laptop & Notebook">
+                <div class="overlay"><span>View Image</span></div>
+            </div>
+        </div>
+
+        <!-- 10. Nature: Beach -->
+        <div class="gallery-item" data-category="nature">
+            <div class="image-wrapper">
+                <img src="https://picsum.photos/id/1018/600/400" alt="Nature View">
+                <div class="overlay"><span>View Image</span></div>
+            </div>
+        </div>
+
+        <!-- 11. Architecture: Old Building -->
+        <div class="gallery-item" data-category="architecture">
+            <div class="image-wrapper">
+                <img src="https://picsum.photos/id/435/600/400" alt="Historic Architecture">
+                <div class="overlay"><span>View Image</span></div>
+            </div>
+        </div>
+
+        <!-- 12. Tech: Phone -->
+        <div class="gallery-item" data-category="tech">
+            <div class="image-wrapper">
+                <img src="https://picsum.photos/id/366/600/400" alt="Mobile Phone">
+                <div class="overlay"><span>View Image</span></div>
+            </div>
+        </div>
+        
+        <!-- 13. Nature: Starry Sky -->
+        <div class="gallery-item" data-category="nature">
+            <div class="image-wrapper">
+                <img src="https://picsum.photos/id/1022/600/400" alt="Night Sky">
+                <div class="overlay"><span>View Image</span></div>
+            </div>
+        </div>
+
+        <!-- 14. Architecture: Rails -->
+        <div class="gallery-item" data-category="architecture">
+            <div class="image-wrapper">
+                <img src="https://picsum.photos/id/439/600/400" alt="Urban Texture">
+                <div class="overlay"><span>View Image</span></div>
+            </div>
+        </div>
+
+        <!-- 15. Tech: Electronics -->
+        <div class="gallery-item" data-category="tech">
+            <div class="image-wrapper">
+                <img src="https://picsum.photos/id/201/600/400" alt="Electronics">
+                <div class="overlay"><span>View Image</span></div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <button class="nav-btn prev-btn">&#10094;</button>
+        
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+        </div>
+        
+        <button class="nav-btn next-btn">&#10095;</button>
+    </div>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
